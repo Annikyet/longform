@@ -22,7 +22,19 @@ namespace longform.Controllers
       _auth0Provider = auth0Provider;
     }
 
-
+    [HttpGet("{id}")]
+    public async Task<ActionResult<Article>> GetById(int id)
+    {
+      try
+      {
+        Article article = await _articleService.GetById(id);
+        return Ok(article);
+      }
+      catch (Exception e)
+      {
+        return BadRequest(e.Message);
+      }
+    }
   }
 }
 

@@ -10,6 +10,11 @@ namespace longform.Services
     {
       _repo = repo;
     }
+
+    internal Article GetById(int id)
+    {
+      
+    }
   }
     // public class AccountService
     // {
