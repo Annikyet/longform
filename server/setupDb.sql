@@ -50,3 +50,11 @@ CREATE TABLE IF NOT EXISTS subscriptions(
   publicationId INT,
   tag VARCHAR(255)
 ) DEFAULT CHARSET utf8;
+
+CREATE TABLE IF NOT EXISTS blacklists(
+  readerId VARCHAR(255) NOT NULL,
+  reported BOOL DEFAULT 0,
+  authorId VARCHAR(255),
+  publicationId INT,
+  tag VARCHAR(255)
+) DEFAULT CHARSET utf8;
