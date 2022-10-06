@@ -1,6 +1,7 @@
 -- Active: 1665080377241@@annikadev.com@3306@longform
 CREATE TABLE IF NOT EXISTS accounts(
   id VARCHAR(255) NOT NULL PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
   name VARCHAR(255) NOT NULL,
   bio VARCHAR(4095),
   profileImgId INT
