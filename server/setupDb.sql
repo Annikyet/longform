@@ -43,3 +43,10 @@ CREATE TABLE IF NOT EXISTS tags(
   articleId INT NOT NULL,
   tag VARCHAR(255) NOT NULL COMMENT 'name of tag'
 ) DEFAULT CHARSET UTF8;
+
+CREATE TABLE IF NOT EXISTS subscriptions(
+  readerId VARCHAR(255) NOT NULL,
+  authorId VARCHAR(255),
+  publicationId INT,
+  tag VARCHAR(255)
+) DEFAULT CHARSET utf8;
