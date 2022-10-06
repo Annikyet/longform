@@ -16,3 +16,11 @@ CREATE TABLE IF NOT EXISTS articles(
   coverImgId INT DEFAULT 0,
   body TEXT COMMENT 'content of article in markdown'
 ) DEFAULT CHARSET utf8;
+
+CREATE TABLE IF NOT EXISTS images(
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  ownerId VARCHAR(255),
+  title VARCHAR(255),
+  protected BOOL DEFAULT 0,
+  url VARCHAR(255) COMMENT 'temporary until blobs are implemented'
+) DEFAULT CHARSET utf8;
