@@ -24,3 +24,17 @@ CREATE TABLE IF NOT EXISTS images(
   protected BOOL DEFAULT 0,
   url VARCHAR(255) COMMENT 'temporary until blobs are implemented'
 ) DEFAULT CHARSET utf8;
+
+CREATE TABLE IF NOT EXISTS publications(
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL,
+  coverImgId INT,
+  description VARCHAR(4095)
+) DEFAULT CHARSET utf8;
+
+CREATE TABLE IF NOT EXISTS publicationAuthors(
+  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  authorId VARCHAR(255) NOT NULL,
+  publicationId INT NOT NULL,
+  isOwner BOOL NOT NULL
+) DEFAULT CHARSET utf8;
