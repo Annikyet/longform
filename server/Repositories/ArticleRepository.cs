@@ -13,7 +13,11 @@ namespace longform.Repositories
       _db =db;
     }
 
-    
+    internal Article GetById(int id)
+    {
+      string sql = "SELECT * FROM articles WHERE id = @id;";
+      return _db.QueryFirstOrDefault<Article>(sql, new { id });
+    }
   }
     // public class AccountsRepository
     // {

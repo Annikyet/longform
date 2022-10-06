@@ -13,7 +13,7 @@ namespace longform.Services
 
     internal Article GetById(int id)
     {
-      
+      return _repo.GetById(id);
     }
   }
     // public class AccountService

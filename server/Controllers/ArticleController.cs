@@ -23,11 +23,11 @@ namespace longform.Controllers
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<Article>> GetById(int id)
+    public ActionResult<Article> GetById(int id)
     {
       try
       {
-        Article article = await _articleService.GetById(id);
+        Article article = _articleService.GetById(id);
         return Ok(article);
       }
       catch (Exception e)
