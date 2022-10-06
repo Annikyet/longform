@@ -3,10 +3,10 @@ using longform.Repositories;
 
 namespace longform.Services
 {
-  public class ArticleService
+  public class ArticlesService 
   {
-    private readonly ArticleRepository _repo;
-    public ArticleService(ArticleRepository repo)
+    private readonly ArticlesRepository _repo;
+    public ArticlesService (ArticlesRepository repo)
     {
       _repo = repo;
     }

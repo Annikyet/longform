@@ -44,6 +44,9 @@ namespace longform
             
             services.AddScoped<AccountsRepository>();
             services.AddScoped<AccountService>();
+
+            services.AddTransient<ArticlesRepository>();
+            services.AddTransient<ArticlesService>();
         }
 
         private void ConfigureCors(IServiceCollection services)

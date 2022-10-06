@@ -4,11 +4,11 @@ using Dapper;
 
 namespace longform.Repositories
 {
-  public class ArticleRepository
+  public class ArticlesRepository
   {
     private readonly IDbConnection _db;
 
-    public ArticleRepository(IDbConnection db)
+    public ArticlesRepository (IDbConnection db)
     {
       _db =db;
     }
