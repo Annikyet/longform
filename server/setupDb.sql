@@ -38,3 +38,8 @@ CREATE TABLE IF NOT EXISTS publicationAuthors(
   publicationId INT NOT NULL,
   isOwner BOOL NOT NULL
 ) DEFAULT CHARSET utf8;
+
+CREATE TABLE IF NOT EXISTS tags(
+  articleId INT NOT NULL,
+  tag VARCHAR(255) NOT NULL COMMENT 'name of tag'
+) DEFAULT CHARSET UTF8;
