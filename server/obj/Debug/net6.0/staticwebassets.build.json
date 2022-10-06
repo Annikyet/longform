@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "07HzhfNqHj7a19Q73Zki/FBHof9zzvld9P7YxFsR4W8=",
+  "Source": "longform",
+  "BasePath": "_content/longform",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "longform/wwwroot",
+      "Source": "longform",
+      "ContentRoot": "/Users/annika/Source/personal/longform/server/wwwroot/",
+      "BasePath": "_content/longform",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/annika/Source/personal/longform/server/wwwroot/index.html",
+      "SourceId": "longform",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/annika/Source/personal/longform/server/wwwroot/",
+      "BasePath": "_content/longform",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/index.html"
+    }
+  ]
+}

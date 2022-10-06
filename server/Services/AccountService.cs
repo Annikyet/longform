@@ -33,7 +33,7 @@ namespace longform.Services
         {
             Account original = GetProfileByEmail(userEmail);
             original.Name = editData.Name.Length > 0 ? editData.Name : original.Name;
-            original.Picture = editData.Picture.Length > 0 ? editData.Picture : original.Picture;
+            // original.ProfileImgId = editData.ProfileImgId.Length > 0 ? editData.ProfileImgId : original.ProfileImgId;
             return _repo.Edit(original);
         }
     }

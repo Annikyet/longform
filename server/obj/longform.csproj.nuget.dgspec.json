@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/annika/Source/personal/longform/longform.csproj": {}
+    "/Users/annika/Source/personal/longform/server/longform.csproj": {}
   },
   "projects": {
-    "/Users/annika/Source/personal/longform/longform.csproj": {
+    "/Users/annika/Source/personal/longform/server/longform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/annika/Source/personal/longform/longform.csproj",
+        "projectUniqueName": "/Users/annika/Source/personal/longform/server/longform.csproj",
         "projectName": "longform",
-        "projectPath": "/Users/annika/Source/personal/longform/longform.csproj",
+        "projectPath": "/Users/annika/Source/personal/longform/server/longform.csproj",
         "packagesPath": "/Users/annika/.nuget/packages/",
-        "outputPath": "/Users/annika/Source/personal/longform/obj/",
+        "outputPath": "/Users/annika/Source/personal/longform/server/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/annika/.nuget/NuGet/NuGet.Config"
